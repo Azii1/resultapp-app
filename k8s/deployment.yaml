@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: result-app
+  name: resultapp-app
   labels:
     app: result
 spec:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: result
-        image: azii1/result-app:latest
+        image: azii1/resultapp-app:latest
         ports:
         - containerPort: 3000
         resources:
